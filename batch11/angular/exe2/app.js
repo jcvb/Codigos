@@ -6,20 +6,15 @@
     };
     angular
         .module('formLogin', [])
-        .component('login', login)
-        .controller('loginController', loginController);
+        .component('login', login);
 
-    function loginController() {
+    function validateController() {
         var loginForm = this;
         loginForm.validateForm = validateForm;
 
         function validateForm() {
-        	console.log(loginForm.user)
-        	console.log(loginForm.password)
+            console.log(loginForm.user)
+            console.log(loginForm.password)
         }
-    }
-
-    function validateController() {
-    	var login = this;
     }
 })();
