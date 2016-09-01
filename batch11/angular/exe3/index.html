@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myMovies">
+<head>
+	<meta charset="UTF-8">
+	<title>Movies</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  	<!-- Compiled and minified JavaScript -->
+
+</head>
+<body ng-controller="movieCtrl as movie">
+	<div class="container">
+		<input ng-model="search">
+	</div>
+	<div class="row">
+		<div class="col m2" ng-repeat="m in movie.collection | filter:search | orderBy: 'category' ">
+			<div class="card">
+				<div class="card-image">
+					<img ng-src="{{m.img}}">
+					<span class="card-title">{{m.name}}</span>
+				</div>
+				<div class="card-content">
+					{{m.category}}, {{m.year}}
+				</div>
+				<div class="card-action">
+					<h5>Cast</h5>
+					<ul ng-repeat="c in m.cast">
+						<li>{{c}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>
