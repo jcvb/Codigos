@@ -1,7 +1,7 @@
-(function() {
-    'use strict';
+( function () {
+    "use strict";
     var hello = {
-        templateUrl: './partials/hello.html',
+        templateUrl: "./partials/hello.html",
         controller: helloCtrl
     };
     // var hello = {
@@ -18,9 +18,9 @@
     // };
 
     angular
-        .module('myApp', [])
-        .component('hello', hello)
-        .controller('firstCtrl', firstCtrl);
+        .module("myApp", [])
+        .component("hello", hello)
+        .controller("firstCtrl", firstCtrl);
 
     function firstCtrl() {
         var first = this;

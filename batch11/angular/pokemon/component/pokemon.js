@@ -1,24 +1,24 @@
-(function(){
-	'use strict';
+( function () {
+    "use strict";
 
-	var pokemon = {
-		templateUrl: "./component/poke.html",
-		controller: pokemonCtrl
-	};
+    var pokemon = {
+        templateUrl: "./component/poke.html",
+        controller: pokemonCtrl
+    };
 
-	angular
-		.module("pokemon")
-		.component("pokemonApp", pokemon);
-	
-	pokemonCtrl.$inject = ["apiPokemon"];
+    angular
+        .module("pokemon")
+        .component("pokemonApp", pokemon);
 
-	function pokemonCtrl(apiPokemon){
-		var pokemon = this;
-		pokemon.char = null;
+    pokemonCtrl.$inject = ["apiPokemon"];
 
-		pokemon.dataPokemon = apiPokemon.get()
-			.$promise.then(function(response){
-				pokemon.char = response;
-			})
-	}
+    function pokemonCtrl(apiPokemon) {
+        var pokemon = this;
+        pokemon.char = null;
+
+        pokemon.dataPokemon = apiPokemon.get()
+            .$promise.then(function (response) {
+                pokemon.char = response;
+            });
+    }
 })();

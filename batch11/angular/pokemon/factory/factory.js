@@ -1,13 +1,13 @@
-(function(){
-	'use strict';
+( function () {
+    "use strict";
 
-	angular
-		.module("pokemon")
-		.factory('apiPokemon', apiPokemon);
+    angular
+        .module("pokemon")
+        .factory("apiPokemon", apiPokemon);
 
-	apiPokemon.$inject = ["$resource"];
+    apiPokemon.$inject = ["$resource"];
 
-	function apiPokemon($resource){
-		return $resource('http://pokeapi.co/api/v2/pokemon/10/');
-	}
+    function apiPokemon($resource) {
+        return $resource("http://pokeapi.co/api/v2/pokemon/10/");
+    }
 })();

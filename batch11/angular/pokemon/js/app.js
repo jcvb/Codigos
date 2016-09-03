@@ -2,5 +2,5 @@
     "use strict";
 
     angular
-        .module("starwars", ["ngResource"]);
+        .module("pokemon", ["ngResource"]);
 })();

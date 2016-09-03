@@ -1,20 +1,18 @@
 <div class="container">
-  <ul class="collapsible popout collapsible-accordion" data-collapsible="accordion">
-    <li class="">
-      <div class="collapsible-header"><i class="material-icons">work</i>{{$ctrl.char.name}}</div>
-      <div class="collapsible-body" style="display: none;">
-        <p>
-          
-        </p>
-      </div>
-    </li>
-  </ul>
+    <ul class="collapsible popout collapsible-accordion" data-collapsible="accordion">
+        <li class="">
+            <div class="collapsible-header"><i class="material-icons">work</i>{{$ctrl.char.name}}</div>
+            <div class="collapsible-body" style="display: none;">
+                <p>
+                </p>
+            </div>
+        </li>
+    </ul>
 </div>
-
 <script>
-  $(document).ready(function(){
-    $('.collapsible').collapsible({
-      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+$(document).ready(function() {
+    $(".collapsible").collapsible({
+        accordion: false
     });
-  });
+});
 </script>

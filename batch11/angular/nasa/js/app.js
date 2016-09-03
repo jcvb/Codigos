@@ -1,6 +1,6 @@
-(function(){
-	'use strict';
+( function () {
+    "use strict";
 
-	angular
-		.module('nasa',["ngResource"]);
+    angular
+        .module("nasa", ["ngResource"]);
 })();

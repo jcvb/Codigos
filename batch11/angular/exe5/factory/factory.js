@@ -1,12 +1,13 @@
-(function(){
-	'use strict';
+( function () {
+    "use strict";
 
-	angular
-		.module("starwars")
-		.factory("apiStar", apiStar);
+    angular
+        .module("starwars")
+        .factory("apiStar", apiStar);
 
-	apiStar.$inject = ["$resource"];
-	function apiStar($resource){
-		return $resource("http://swapi.co/api/:category/:id");
-	}
+    apiStar.$inject = ["$resource"];
+
+    function apiStar($resource) {
+        return $resource("http://swapi.co/api/:category/:id");
+    }
 })();
