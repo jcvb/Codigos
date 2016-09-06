@@ -1,0 +1,17 @@
+<section class="spotify-player">
+	<div class="search">
+		<form ng-submit="$ctrl.search()">
+			<input type="text" ng-model="$ctrl.song_name">
+			<button>Search Track</button>
+		</form>
+		<div class="player">
+			<div class="results">
+				<a class="song" ng-click="$ctrl.play(song)" ng-repeat = "song in $ctrl.playlist">
+					<span class="title">{{song.name}}</span>
+					<span>{{$ctrl.milliseconds(song.duration_ms)}}</span>
+					<span>{{song.artist[0].name}}</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
