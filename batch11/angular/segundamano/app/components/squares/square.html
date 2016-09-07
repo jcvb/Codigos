@@ -1,0 +1,28 @@
+<section id="categories" class="container">
+	<div class="row">
+		<div class="col m6">
+			<div class="card" ng-repeat="category in $ctrl.categories | limitTo:2">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img ng-src="{{category.img}}" class="activator">
+					<span class="card-title">{{category.name}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col m3">
+			<div class="card" ng-repeat="category in $ctrl.categories | limitTo:3:2">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img ng-src="{{category.img}}" class="activator">
+					<span class="card-title">{{category.name}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col m3">
+			<div class="card" ng-repeat="category in $ctrl.categories | limitTo:2:5">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img ng-src="{{category.img}}" class="activator">
+					<span class="card-title">{{category.name}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

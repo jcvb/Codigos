@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Inmuebles",
+    "img": "/angular/segundamano/assets/realstate.jpg",
+    "slug": "categoria/inmuebles",
+    "id": "1"
+  },
+  {
+    "name": "Vehículos",
+    "img": "/angular/segundamano/assets/car.jpg",
+    "slug": "categoria/vehiculos",
+    "id": "2"
+  },
+  {
+    "name": "Hogar",
+    "img": "/angular/segundamano/assets/home.jpg",
+    "slug": "categoria/hogar",
+    "id": "3"
+  },
+  {
+    "name": "Tiempo libre",
+    "img": "/angular/segundamano/assets/tiempolibre.jpg",
+    "slug": "categoria/tiempo-libre",
+    "id": "4"
+  },
+  {
+    "name": "Negocios",
+    "img": "/angular/segundamano/assets/negocios.jpg",
+    "slug": "categoria/negocios",
+    "id": "5"
+  },
+  {
+    "name": "Deportes",
+    "img": "/angular/segundamano/assets/sport.jpg",
+    "slug": "categoria/deportes",
+    "id": "6"
+  },
+  {
+    "name": "Videojuegos",
+    "img": "/angular/segundamano/assets/game.jpg",
+    "slug": "categoria/videojuegos",
+    "id": "7"
+  }
+]
